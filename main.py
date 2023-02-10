@@ -7,7 +7,7 @@ pygame.init()
 myColor = [(0, 0, 255), (0, 255, 0), (255, 0, 0), (255, 255, 0),
            (255, 0, 255), (0, 255, 255), (255, 192, 203), (128, 42, 42)]
 screen = pygame.display.set_mode((600, 840))
-background = pygame.image.load('./files/bgp.png')
+background = pygame.image.load('./source/bgp.png')
 pygame.display.set_caption("Rertis")
 screen.blit(background, (0, 0))
 pygame.display.update()
@@ -34,7 +34,7 @@ class Board:
         self.stack = [0, 1]
 
     def welcome(self):
-        homepage = pygame.image.load('./files/welcome.png')
+        homepage = pygame.image.load('./source/welcome.png')
         screen.blit(homepage, (0, 0))
         pygame.display.update()
         while True:
@@ -81,7 +81,7 @@ class Board:
         self.next_time = time.time() + self.blank
 
     def pause(self):
-        paused = pygame.image.load('./files/bgp_paused.png')
+        paused = pygame.image.load('./source/bgp_paused.png')
         screen.blit(paused, (0, 0))
         screen.blit(pygame.font.Font(None, 48).render(str(self.score), True, (0, 0, 0)), (70, 30))
         pygame.display.update()
