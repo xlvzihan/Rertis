@@ -3,6 +3,7 @@ import time
 import random
 import math
 from pygame.locals import *
+
 pygame.init()
 myColor = [(0, 0, 255), (0, 255, 0), (255, 0, 0), (255, 255, 0),
            (255, 0, 255), (0, 255, 255), (255, 192, 203), (128, 42, 42)]
