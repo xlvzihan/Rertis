@@ -191,7 +191,6 @@ class Board:
             else:
                 return
 
-
 bd = Board()
 bd.welcome()
 while True:
